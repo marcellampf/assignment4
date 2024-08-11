@@ -3,41 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA Astronomy Picture of the Day</title>
+    <title>Trivia Quiz App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>NASA APOD</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://api.nasa.gov/" target="_blank">API Documentation</a></li>
-                    <li><a href="https://www.nasa.gov/" target="_blank">NASA</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <h1>Trivia Quiz App</h1>
+        <button id="start-quiz">Start Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <div id="question-container"></div>
+            <div id="options-container" style="display: none;">
+
+            </div>
         </div>
-    </header>
-    <main>
-        <section id="apodContent">
-            <h2 id="mainTitle">Loading...</h2>
-            <img id="mainImage" src="" alt="NASA Astronomy Picture of the Day">
-            <p id="mainDescription">Loading...</p>
-            <p><strong>Date:</strong> <span id="mainDate">Loading...</span></p>
-            <p><a id="mainLink" href="" target="_blank" class="button">View Original</a></p>
-        </section>
-        <section id="gallery">
-            <ul id="galleryList">
-                <!-- Miniaturas serão adicionadas aqui pelo JavaScript -->
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>API documentation can be found <a href="https://api.nasa.gov/" target="_blank">here</a>.</p>
-        <p>&copy; 2024 NASA Astronomy Picture of the Day</p>
-    </footer>
+        <div id="score-container"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
-
