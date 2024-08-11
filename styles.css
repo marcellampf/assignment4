@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #004b8d; /* Azul suave da NASA */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #003a7e; /* Azul mais escuro da NASA */
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Branco */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Branco */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#apodContent {
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+#mainImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ffffff; /* Borda branca na imagem principal */
+}
+
+#gallery {
+    margin-top: 20px;
+}
+
+#galleryList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#galleryList li {
+    margin: 0 8px; /* Espaço de 16px entre as imagens menores (8px em cada lado) */
+}
+
+#galleryList img {
+    width: 150px; /* Largura reduzida para miniaturas */
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ffffff; /* Borda branca para contraste */
+    border-radius: 5px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#galleryList img:hover {
+    transform: scale(1.05);
+    border-color: #f9f9f9; /* Cor da borda ao passar o mouse */
+}
+
+footer {
+    background-color: #003a7e; /* Azul mais escuro da NASA */
+    padding: 20px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f9f9f9; /* Branco */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f39c12; /* Amarelo da NASA */
+    text-decoration: underline;
+}
+
+/* Estilo do botão */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff; /* Branco */
+    background-color: #004b8d; /* Azul suave da NASA */
+    border: 2px solid #f9f9f9; /* Cor clara para o botão */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f39c12; /* Amarelo da NASA */
+    color: #004b8d; /* Azul suave da NASA */
+}
+
